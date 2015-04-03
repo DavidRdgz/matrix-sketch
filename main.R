@@ -1,5 +1,5 @@
 #!/usr/bin/Rscript
-source("msketch.R")
+source("MSketch.R")
 
 
 

@@ -1,6 +1,6 @@
 #!/usr/bin/Rscript
 
-mSketch <- function(n = 0,l = 0)
+MSketch <- function(n = 0,l = 0)
 {
         msketch <- list(
             n= n,
@@ -11,7 +11,7 @@ mSketch <- function(n = 0,l = 0)
        )
 
         ## Set the name for the class
-        class(msketch) <- append(class(msketch),"mSketch")
+        class(msketch) <- append(class(msketch),"MSketch")
         return(msketch)
 }
 
@@ -23,7 +23,7 @@ negs.to.zero <- function(...){
 }
 
 frequentdirections <- function(...) UseMethod("frequentdirections")
-frequentdirections.mSketch <- function(...){ 
+frequentdirections.MSketch <- function(...){ 
     args <- list(...)
     object<- args[["object"]]
     
@@ -44,7 +44,7 @@ frequentdirections.mSketch <- function(...){
 }
 
 addrow <- function(...) UseMethod("addrow")
-addrow.mSketch <- function(...){
+addrow.MSketch <- function(...){
     args <- list(...)
     object <- args[["object"]]
     row <- args[["row"]]
