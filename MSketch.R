@@ -6,9 +6,9 @@ MSketch <- function(n = 0,l = 0)
             n= n,
             l= l,
             delta = 0,
-            sigma.hat = matrix(),
+            sigma.hat = 0,
             svd = list(),
-            B = matrix()
+            B = c()
        )
 
         ## Set the name for the class
