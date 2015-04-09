@@ -11,7 +11,7 @@ main <- function(){
     # args: n = number of columns,
     #       l = number of rows for matrix sketch
 
-    m <- mSketch(n = 5, l = 10)
+    m <- MSketch(n = 5, l = 10)
 
     # ----------
     #

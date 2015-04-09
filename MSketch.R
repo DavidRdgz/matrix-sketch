@@ -7,6 +7,7 @@ MSketch <- function(n = 0,l = 0)
             l= l,
             delta = 0,
             sigma.hat = 0,
+            svd = 0,
             B = c()
        )
 
@@ -39,7 +40,7 @@ frequentdirections.MSketch <- function(...){
     object$B <- (sigma%*%t(v))[1:(object$l/2 -1),]
     object$delta <- delta
     object$sigma.hat <- sigma
-
+    object$svd <- m.svd
     return(object)
 }
 
